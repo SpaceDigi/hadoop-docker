@@ -23,10 +23,10 @@ RUN mkdir -p /data/hdfs/namenode && \
     mkdir -p /data/hdfs/datanode
 
 # Копіюємо конфігураційні файли
-COPY ../config/core-site.xml $HADOOP_HOME/etc/hadoop/
-COPY ../config/hdfs-site.xml $HADOOP_HOME/etc/hadoop/
-COPY ../config/mapred-site.xml $HADOOP_HOME/etc/hadoop/
-COPY ../config/yarn-site.xml $HADOOP_HOME/etc/hadoop/
+COPY config/core-site.xml $HADOOP_HOME/etc/hadoop/
+COPY config/hdfs-site.xml $HADOOP_HOME/etc/hadoop/
+COPY config/mapred-site.xml $HADOOP_HOME/etc/hadoop/
+COPY config/yarn-site.xml $HADOOP_HOME/etc/hadoop/
 
 # Копіюємо скрипт запуску
 COPY start-hadoop.sh /opt/
