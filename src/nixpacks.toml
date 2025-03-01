@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["docker", "docker-compose"]
+
+[phases.build]
+cmds = []
+
+[start]
+cmd = "docker-compose up -d && tail -f /dev/null"
